@@ -56,7 +56,7 @@ export class ProfilePage implements OnInit {
     formData.append('AccountID',this.AccountID);
    
   
-    this.http.post('http://localhost/grocery-app/backend/UploadPhoto.php',formData).subscribe((response:any)=>{
+    this.http.post('http://192.241.145.200/grocery-app/backend/UploadPhoto.php',formData).subscribe((response:any)=>{
     console.log(response);
     this.getAccount(this.AccountID);
     this.successAlert();
