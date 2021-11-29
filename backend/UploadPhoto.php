@@ -23,8 +23,8 @@ if (isset($_FILES['Image'])){
 function uploadImage($imgName){
     if (isset($_FILES[$imgName])){
         $img_tmp=$_FILES[$imgName]['tmp_name'];
-        $imgFolder='/gs-app/images/';
-     $des = "C:/xampp/htdocs/gs-app/images/";
+        $imgFolder='/grocery-app/images/';
+     $des = "/opt/lampp/htdocs/grocery-app/images/";
 
         if(file_exists($img_tmp)){
             $taille_maxi=1000000;
