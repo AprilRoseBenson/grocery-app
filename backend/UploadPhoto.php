@@ -6,7 +6,7 @@
  header('Content-Length: 0');
  header('Content-Type: text/plain');
  try{
-     $bdd=new \pdo('mysql:host=localhost;dbname=gs-ra','root','',array(PDO::ATTR_EMULATE_PREPARES=>false,PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+     $bdd=new \pdo('mysql:host=localhost;dbname=gsra','root','',array(PDO::ATTR_EMULATE_PREPARES=>false,PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
  }catch(Exception $e){
      echo 'Can\'t connect:'.$e->getMessage().'<br/>';
